@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+ <head>
+   <meta charset="utf-8">
+   <link rel="stylesheet" href="main.css">
+   <title> idea space</title>
+ </head>
+ <body>
+   {{#each words}}
+   <div class="contentContainer" id="{{layout_id}}">
+     {{word}}
+   </div>
+   {{/each}}
+
+  <div class="formStuff">
+    <form action="/new-word" method="post"
+    <input type="text" name="word"
+    placeholder="holla" id="inputField" maxlength="15">
+</form>
+
+<form action="/delete-word" method="post">
+  <input type="submit" name="delete" value="clear" id="clearButton"
+</form>
+</div>
+</body>
